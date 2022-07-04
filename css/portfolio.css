@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+/*공통*/
+*{margin:0; padding:0; box-sizing:border-box;}
+html,body {font:12pt/160% 'Noto Sans KR', sans-serif; letter-spacing: -0.75pt;}
+body {background:#f6eced;}
+img {max-width:100%; display:block;}
+a {text-decoration:none;}
+
+
+/*내비게이션*/
+nav {position:fixed; width:100%; top:0;  padding:20pt 10pt 10pt 10pt; /*font-weight:bold;*/ z-index:1; transition:0.3s;}
+nav.act {background:#8373a2;}
+nav> div {max-width:1490px; margin:auto; display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;}
+nav img {width:50px; margin-left:50px;}
+/*nav p {flex:1; font-size:2rem; color:white; font-family: 'Niconne', cursive;}*/
+nav a {padding-right:30px; color:white; text-shadow:0 0 10px black; font-family: 'Niconne', cursive; font-size:1.7rem;}
+nav a:hover, a.active {color:#a0d2c9;}
+
+/*헤더*/
+#top {height:100vh; background:url("../images/sunset-26317752.jpg") no-repeat fixed center top / cover;}
+#typing {padding:40vh 1px 0 1px; color:white; text-align:center; line-height:160%; font-size:2.5rem; height:60vh; text-shadow:0 1px 10px black; font-family: 'Song Myung', serif;}
+
+#scroll {max-width:100px; margin:auto; margin-top:30vh; text-align:center;}
+#top i {font-size:2.5rem; color:white; display:block; animation:down 1s infinite both;}
+@keyframes down{
+	from 	{transform:translateY(-10pt); opacity:1;}
+	to 		{transform:translateY(0); opacity:0;}
+}
+#top a {color:white;}
+
+
+h2 {text-align:center; font-size:4rem; margin-bottom:60pt; font-family: 'Niconne', cursive;}
+.area {padding-top:11vh; min-height:100vh;}
+
+
+/*About*/
+#about {background:#f6eced;}
+#about img {width:250pt; margin:0pt auto; }
+#about> p {max-width:150pt; margin:auto; text-align:center;}
+#about  q {font-weight:bold; font-size:1.2rem; line-height:200%; background:#a0d2c9;}
+#about> div {max-width:900pt; margin:auto; display:flex;}
+#about  section {flex:1;}
+#about  section:nth-child(1) {flex:1;}
+#about  section:nth-child(2) {flex:2;}
+#about  section:nth-child(3) {flex:0.8;}
+#about  section> p {font-weight:300; font-size:0.9rem;}
+#about h3 {margin:50pt 0 10pt 0;}
+
+
+/*Portfolio*/
+#portfolio {max-width:1000pt;margin:auto; overflow:hidden;}
+#portfolio> section {display:flex;}
+#leeum {padding:10vh 0 18vh 0; }
+
+#portfolio> section:nth-of-type(1) 		{transform:translateY(100px); opacity:0; transition:1s;}
+#portfolio> section:nth-of-type(1).act	{transform:translateY(0); opacity:1;}
+
+#portfolio> section:nth-of-type(2)> div:first-child {transform:translateX(-450pt);transition:3s;}
+#portfolio> section:nth-of-type(2)> div:last-child	{transform:translateX(600pt); transition:3s;}
+
+#portfolio> section:nth-of-type(2).act> div:first-child {transform:translateX(0);}
+#portfolio> section:nth-of-type(2).act> div:last-child	{transform:translateX(0);}
+
+#portfolio> section:nth-of-type(3)> div:first-child {transform:scale(0.5); opacity:0; transition:3s;}
+#portfolio> section:nth-of-type(3)> div:last-child	{transform:scale(0.5); opacity:0; transition:3s;}
+
+#portfolio> section:nth-of-type(3).act> div:first-child {transform:scale(1); opacity:1;}
+#portfolio> section:nth-of-type(3).act> div:last-child	{transform:scale(1); opacity:1;}
+
+#portfolio> section:not(#leeum) {min-height:100vh;padding-top:28vh;  }
+#portfolio  div {line-height:270%;}
+#portfolio h3 {font-size:2.3rem; padding-bottom:20pt;}
+#portfolio div:first-child {padding-right:30pt;}
+#portfolio ul {list-style:none; margin-bottom:25pt;}
+#portfolio li {display:flex;}
+#portfolio b  {min-width:60pt;}
+#portfolio span {line-height:180%; text-align:justify;}
+#portfolio a   {padding:6pt 30pt; border-radius:20pt; border:1pt solid #ddd; color:black; font-size:1.rem; font-weight:500; transition:0.3s;}
+#portfolio a:first-of-type {margin-right:10pt;}
+#portfolio a:hover {background:#555; color:white;}
+
+
+/*Event and Detail*/
+#event {max-width:900pt; margin:auto;}
+#event> div {display:flex; flex-wrap:wrap; justify-content:space-evenly; }
+/*호버 각각 셀*/
+#event> div> div {position:relative; margin-bottom:10pt; width:280pt; overflow:hidden;}
+#event div img {width:100%; height:100%; transition:0.3s;}
+/*호버: 검정바탕*/
+#event div p  {position:absolute; width:100%; height:100%; background:rgba(0,0,0, 0.75); top:0; color:white; text-align:center; opacity:0;  transition:0.3s;}
+/*호버: 돋보기*/
+#event  i {font-size:2rem; display:block; margin-top:40%;}
+/*호버: 검정+돋보기+더보기글자
+#event  div:hover img {transform:scale(1.1); cursor:pointer;}
+#event  div:hover p {opacity:1;}*/
+
+#event div.ho img {transform:scale(1.1); cursor:pointer;}
+#event div.ho p {opacity:1;}
+
+#contact 	{background:#88b1ab; margin-top:100px; }
+#contact.area {min-height:60vh;}
+#contact b 	{display:block; font-size:1.1rem; font-weight:400; padding-top:20pt;}
+#contact div {max-width:600px; margin:auto; display:flex; padding-top:30pt;}
+#contact section {flex:1; text-align:center;}
+#contact i, #contact a.fas {font-size:5rem; color:#fff; padding-bottom:10pt;}
+#contact h2 {color:white;}
+#contact h3 {color:white;}
+#contact h3+a {color:white; font-family: 'Noto Sans KR', sans-serif;}
+#contact p {font-family: 'Noto Sans KR', sans-serif; color:white;}
+
+
+/*팝업 큰이미지 보기*/
+#popup {position:fixed; top:0; width:100%; background:rgba(0,0,0, 0.9); z-index:2; height:100vh; overflow:auto; display:none;}
+#popup h3 {padding:15pt; background:#333; text-align:center; color:white;}
+#popup img {margin:auto;}
+
+
+@media (max-width:600px) {
+	
+	h2 {font-size:2.2rem;}
+	.area {/*padding-top:11vh;*/} 
+	#top {background-size:auto 100vh;}
+	#typing {font-size:2rem;}	
+	
+	nav {padding:10pt 5pt 5pt 5pt;}
+	nav> div {display:block; }
+	nav p {margin-bottom:5pt;}
+	nav p+div {line-height:120%;}
+	nav a {font-size:0.9rem; margin-left:18pt;}
+	nav a:first-child {margin-left:0;}
+	/***********/
+	.area {padding-top:18vh;}
+	
+	#about {padding-bottom:20pt;}
+	#about img {max-width:60%;}
+	#about> div {display:block; padding:0 10pt;}
+	/***********/
+	#portfolio> section {padding:0  10pt;}
+	
+	#portfolio> section:nth-of-type(1)	{ transform:translateY(0); opacity:1;}
+	#portfolio> section:nth-of-type(2)> div:first-child {transform:translateX(0);}
+	#portfolio> section:nth-of-type(2)> div:last-child	{transform:translateX(0);}
+	#portfolio> section:nth-of-type(3)> div:first-child {transform:scale(1); opacity:1;}
+	#portfolio> section:nth-of-type(3)> div:last-child	{transform:scale(1); opacity:1;}
+	
+	#portfolio  h3   {font-size:1.8rem;}
+	#portfolio  img  {margin-bottom:30pt;}
+	
+	#leeum, #tae {flex-direction:column-reverse;}
+	#burts {flex-direction:column;}
+	
+	#portfolio div:first-child {padding-right:0pt;}
+	#portfolio a {padding:4pt 13pt;}
+	#portfolio a:first-of-type {margin-right:5pt;}
+	
+	
+}
+/* 넓이 (0~375픽셀) */
+@media (max-width:375px) {	
+	.area {padding-top:25vh;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
