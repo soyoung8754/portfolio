@@ -83,20 +83,20 @@ h2 {text-align:center; font-size:4rem; margin-bottom:60pt; font-family: 'Niconne
 
 /*Event and Detail*/
 #event {max-width:900pt; margin:auto;}
-#event> div {display:flex; flex-wrap:wrap; justify-content:space-evenly; }
+#event> div {display:flex; flex-wrap:wrap; justify-content:space-evenly;}
 /*호버 각각 셀*/
-#event> div> div {position:relative; margin-bottom:10pt; width:280pt; overflow:hidden;}
-#event div img {width:100%; height:100%; transition:0.3s;}
+#event> div> div {position:relative; margin-bottom:10pt; width:280pt; overflow:hidden; border-radius:20px;}
+#event div img {width:100%; height:100%; border-radius:10px; transition:0.3s;}
 /*호버: 검정바탕*/
-#event div p  {position:absolute; width:100%; height:100%; background:rgba(0,0,0, 0.75); top:0; color:white; text-align:center; opacity:0;  transition:0.3s;}
+#event div p  {position:absolute; width:100%; height:100%; background:rgba(0,0,0, 0.75); top:0; color:white; text-align:center; opacity:0; transition:0.3s;}
 /*호버: 돋보기*/
 #event  i {font-size:2rem; display:block; margin-top:40%;}
 /*호버: 검정+돋보기+더보기글자
 #event  div:hover img {transform:scale(1.1); cursor:pointer;}
 #event  div:hover p {opacity:1;}*/
 
-#event div.ho img {transform:scale(1.1); cursor:pointer;}
-#event div.ho p {opacity:1;}
+#event div.ho img {transform:scale(1.1); cursor:pointer; }
+#event div.ho p {opacity:1; }
 
 #contact 	{background:#88b1ab; margin-top:100px; }
 #contact.area {min-height:60vh;}
