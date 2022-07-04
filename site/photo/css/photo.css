@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+* {margin:0; padding:0; box-sizing:border-box; font-family: 'Noto Sans KR', sans-serif;}
+img {display:block; max-width:100%;}
+
+#layout {width:1000px; margin:auto;}
+
+
+/*상단*/
+header {padding-top:10px;}
+h1 {text-align:center;}
+h1 img {display:inline; width:250px;}
+
+/*메뉴*/
+nav ul {display:flex; list-style:none; }
+nav li {flex:1; text-align:center; position:relative;}
+nav li> a {padding:10px; font-family: 'Noto Sans KR', sans-serif; font-size:1.1rem; font-weight:bold; text-decoration:none; color:black; padding:20px 0px; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+/*nav li> a:hover {background:#ff5050; color:white;}*/
+nav a  {display:block;}
+
+/*슬라이드*/
+header + section {overflow:hidden; position:relative;}
+header + section> h2 {display:none;}
+#slide {position:relative; display:flex; width:5000px;}
+#slide img {width:1000px;}
+
+#circle {width:170px; position:absolute; bottom:10px; left:400px; display:flex;}
+#circle div {width:15px; height:15px; border-radius:8px; background:white; margin:5px; transition:0.3s;}
+#circle div.skyblue {background:#3a89ff; width:35px;}
+
+/**/
+#wu {display:flex; padding:0 60px;}
+#wu h2 {padding:10px 0px;}
+#wu hr {width:1px; height:70px; border-left:1px solid #ddd; margin-top:40px;}
+#wu a  {padding:10px;}
+
+#tlt {margin:50px auto 70px;}
+#m1 {display:flex; padding-left:60px; padding-right:60px; padding-bottom:80px;}
+
+/*    수강생 포트폴리오     */
+#ss {display:flex; padding-top:90px; padding-left:50px; padding-bottom:50px;}
+#ss h2 {padding-right:70px;}
+
+#ss span {padding-top:50px; display:block;}
+#ss button {border:none; background:none; width:45px;}
+#ss button:first-child {margin-right:10px;}
+
+#ss > div {flex:1; overflow:hidden;}
+#slide2 {display:flex; position:relative; left:-250px;}
+#slide2 img {width:250px; padding-right:15px;}
+
+/*    지도    */
+#map {position:relative;}
+#map h2 {position:absolute; color:white; width:100%; text-align:center; font-size:1.5rem; top:30px; z-index:1;}
+#map p {position:absolute; color:white; width:100%; text-align:center; font-size:1.1rem; bottom:28px; z-index:1;}
+#map iframe {width:90%;  height:500px; display:block;  position:absolute; top:90px; left:50px; border:none; /*border-radius:20px;*/ }
+#map img {filter:brightness(30%); }
+
+/*    공지사항    */
+#notice {display:flex; padding:50px 0; padding-right:50px; align-items:center;}
+#notice a{text-decoration:none; color:black;}
+
+#notice> div:first-of-type {flex:1;}
+#notice h2 {text-align:center; font-size:1.7rem;}
+#notice> div:first-of-type a {display:inline-block; padding:5px 20px; margin-top:20px; margin-left:68px; border:1px solid black; border-radius:3px;}
+
+#notice> ul {flex:2; list-style:none; margin-right:50px; line-height:170%;}
+#notice> ul span {float:right; color:#7f7f7f;}
+
+#notice> div:last-of-type {flex:1;}
+#notice> div:last-of-type img {display:block; margin:5px; }
+
+/*    사업자등록번호    */
+#footer {display:flex; background:#282425;}
+#footer1 {flex:1;}
+#footer2 {flex:2;}
+
+#footer ul {display:flex; list-style:none; padding-top:30px; color:#abaaaa;}
+#footer ul li a {flex:1; text-decoration:none; padding-right:20px; padding-bottom:20px; color:#abaaaa; font-size:0.8rem; width:100%; border-bottom:1px solid #525051;}
+
+#footer3 ul {display:inline-block; margin-top:20px;}
+#footer ul span {font-size:1.1rem; line-height:200%;}
+#footer3 p {color:#aba9aa; margin-top:30px; font-size:0.9rem;}
+
+/*    최하단 풋터     */
+footer {text-align:center; padding:20px; font-size:0.7rem;}

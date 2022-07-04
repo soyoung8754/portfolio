@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import url("http://fonts.googleapis.com/css?family=Righteous");
+* 			{margin:0; padding:0; box-sizing:border-box; }
+html,body	{font-size:15pt; font-family:"Righteous"; }
+
+/* 상단 로고와 왼쪽 메뉴 */
+header		{position:fixed; z-index:1; top:0;     left:0; margin:60px 0 0 50px; }
+nav			{position:fixed; z-index:1; top:150pt; left:0; width:150pt;}
+nav ul		{list-style:none; line-height:30pt;}	
+nav li:last-child	{border-bottom:1.1pt solid #777;}
+nav a				{display:block; width:100%; 
+					color:#444; font-size:14px; 
+					padding:0 3pt 15pt 0; 
+					text-align:right; text-decoration:none;
+					border-top:1.1pt solid #777; 
+					transition:0.5s;
+}
+	
+/* 전체화면 */
+main			{width:100vw;}
+main>section 	{height:100vh; 
+				background-size:cover; 
+				background-position:right center; 
+				background-attachment:fixed;
+				overflow:hidden; padding:200pt 0 0 0;
+}
+main>section>div	{margin-left:240px;border-top-left-radius:50pt;
+					 padding:20px; padding-left:70px; 
+					background:rgba(255,255,255,0.5);
+}					
+section h1	{font-size:2.6rem; font-weight:normal;}
+section p	{font-size:0.85rem; font-family:"나눔고딕"; color:#333;}
+section b	{font-size:1rem;}
+
+#sec1		{background-image:url("../images/clock_spring.jpg"); }
+#sec2		{background-image:url("../images/clock_summer.jpg"); }
+#sec3		{background-image:url("../images/clock_autumn.jpg"); }
+#sec4		{background-image:url("../images/clock_winter.jpg"); }
+
+#sec1 h1	{color:Crimson;}
+#sec2 h1	{color:white;}
+#sec3 h1	{color:#f07320;}
+#sec4 h1	{color:#01599a;}
+
+#sec3 p		{color:black;}
+
+nav a:hover, nav a.menuOver	{font-size:20px;}
+
+
+
