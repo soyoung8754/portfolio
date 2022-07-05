@@ -118,17 +118,22 @@ h2 {text-align:center; font-size:4rem; margin-bottom:60pt; font-family: 'Niconne
 
 @media (max-width:600px) {
 	
+	#rogo img {padding:0; margin:auto; width:13vw; margin-bottom:10px;}
+	#menu {display:flex; justify-content:space-around;}
+	#menu a {text-align:center;}
+	#menu a:first-child {display:none;}
 	h2 {font-size:2.2rem;}
 	.area {/*padding-top:11vh;*/} 
 	#top {background-size:auto 100vh;}
 	#typing {font-size:2rem;}	
+	/*#rogo img {border:1px solid red;}*/
 	
-	nav {padding:10pt 5pt 5pt 5pt;}
+	nav {padding:10pt 5pt 5pt 5pt; }
 	nav> div {display:block; }
 	nav p {margin-bottom:5pt;}
 	nav p+div {line-height:120%;}
-	nav a {font-size:0.9rem; margin-left:18pt;}
-	nav a:first-child {margin-left:0;}
+	nav a {font-size:1.5rem; margin-left:18pt;}
+	nav a:first-child {margin-left:0px;}
 	/***********/
 	.area {padding-top:18vh;}
 	
@@ -154,11 +159,23 @@ h2 {text-align:center; font-size:4rem; margin-bottom:60pt; font-family: 'Niconne
 	#portfolio a {padding:4pt 13pt;}
 	#portfolio a:first-of-type {margin-right:5pt;}
 	
+	#contact {/*border:1px solid red;*/}
+	#contact section {padding-bottom:100px;}
 	
+}
+
+@media (max-width:537px) {
+	
+	#rogo img {padding:0; margin:auto; width:13vw; margin-bottom:10px;}
+	#menu {display:flex; justify-content:space-around;}
+	#menu a {text-align:center;}
+	#menu a:first-child {display:none;}
 }
 /* 넓이 (0~375픽셀) */
 @media (max-width:375px) {	
 	.area {padding-top:25vh;}
+	#menu {display:flex; justify-content:space-around;}
+	#menu a {padding:0; margin:0; text-align:center;}
 }
 
 
