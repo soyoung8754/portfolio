@@ -81,7 +81,7 @@ h2 {text-align:center; font-size:4rem; margin-bottom:60pt; font-family: 'Niconne
 #portfolio h3 {font-size:2.3rem; padding-bottom:20pt;}
 #portfolio div:first-child {padding-right:30pt;}
 #portfolio ul {list-style:none; margin-bottom:25pt;}
-#portfolio li {display:flex;}
+#portfolio li {display:flex; align-items:center;}
 #portfolio b  {min-width:60pt;}
 #portfolio span {line-height:180%; text-align:justify;}
 #portfolio a   {padding:6pt 30pt; border-radius:20pt; border:1pt solid #ddd; color:black; font-size:1.rem; font-weight:500; transition:0.3s;}
