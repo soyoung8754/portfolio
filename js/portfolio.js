@@ -28,15 +28,16 @@
 	});
 	
 	//상단 메뉴 부드럽게 이동
-	$("nav a, #top a").click(function(){
+	$("#menu a, #top a").click(function(){
 		//큰화면에서만, 부드럽게 스크롤이동
 		if( $(window).width() > 768 ){
 			$("html,body").stop().animate({scrollTop : $(this.hash).offset().top });
 		}
 		//상단 메뉴 - 활성화 유지 (색변경)
-		if( $("nav a") ){
+		//if( $("#menu a") ){
+			$("#menu a").removeClass("active");
 			$(this).addClass("active").siblings().removeClass("active");
-		}
+		//}
 	});
 	
 	//상단 한글자씩 나오는 기능 (타자치는 효과)
@@ -55,34 +56,99 @@
 	}
 	type();
 	
-	//휴대폰에서는 상단 배경색 보임
+	//휴대폰에서는 상단 배경색 보임, 스크롤하면 해당메뉴 색 들어옴
 	if( $(window).width()<= 600 ){
+		/*console.log($("#about").position().top);
+			console.log($("#portfolio").position().top);
+			console.log($("#event").position().top);
+			console.log($("#contact").position().top);*/
 		$("nav").addClass("act");
-	} else{	//휴대폰 아닐때
-		//화면 스크롤시 상단 배경색 생김
-		$(window).scroll(function(){
-			if( $(window).scrollTop() > 100 ){
-				$("nav").addClass("act");
-			} else {
-				$("nav").removeClass("act");
+		
+			$(window).scroll(function(){				
+			if( $(window).scrollTop() > 831 /*&&   $(window).scrollTop() < 1999*/){
+				$("#menu a").removeClass("active");
+				$("#menu a").eq(1).addClass("active").siblings().removeClass("active");
 			}
-		});
+			if( $(window).scrollTop() > 2000 /*&&   $(window).scrollTop() < 4999*/ ){
+				$("#menu a").removeClass("active");
+				$("#menu a").eq(2).addClass("active").siblings().removeClass("active");
+			}
+			if( $(window).scrollTop() > 5000 /* &&   $(window).scrollTop() < 9999*/){
+				$("#menu a").removeClass("active");
+				$("#menu a").eq(3).addClass("active").siblings().removeClass("active");
+			}
+			if( $(window).scrollTop() > 10000 ){
+				$("#menu a").removeClass("active");
+				$("#menu a").eq(4).addClass("active").siblings().removeClass("active");
+			}
+		});	
+	} else{	
+		//휴대폰 아닐때
+		//화면 스크롤시 상단 배경색 생김
+		//((모바일이 아닌 화면))스크롤을 내릴때마다 작품이 하나씩 보임
+		//((모바일 아닌 화면))스크롤 시 메뉴 색변경되어 들어옴
+			$(window).scroll(function(){
+				
+				if( $(window).scrollTop()>200 ){            
+        $(".w1").stop().animate({width:"90%"});
+        $(".w2").stop().delay(600).animate({width:"80%"});
+        $(".w3").stop().delay(1000).animate({width:"70%"});
+        $(".w4").stop().delay(1400).animate({width:"70%"});
+        $(".w5").stop().delay(1800).animate({width:"60%"});
+        }
+				
+				if( $(window).scrollTop() > 100 ){
+				$("nav").addClass("act");
+				} 
+				if( $(window).scrollTop() <= 100 ){
+					$("nav").removeClass("act");
+				}	
+				
+				if( $(window).scrollTop()>1600 ){
+					$("#portfolio> section").eq(0).addClass("act");
+				}
+				if( $(window).scrollTop()>2500 ){
+					$("#portfolio> section").eq(1).addClass("act");
+				}
+				if( $(window).scrollTop()>3400 ){
+					$("#portfolio> section").eq(2).addClass("act");
+				}
+				
+				if( $(window).scrollTop() > 0){
+				$("#menu a").removeClass("active");
+				$("#menu a").eq(0).addClass("active").siblings().removeClass("active");
+				}
+				if( $(window).scrollTop() > 920){
+				$("#menu a").removeClass("active");
+				$("#menu a").eq(1).addClass("active").siblings().removeClass("active");
+				}
+				if( $(window).scrollTop() > 1840){
+					$("#menu a").removeClass("active");
+					$("#menu a").eq(2).addClass("active").siblings().removeClass("active");
+				}
+				if( $(window).scrollTop() > 4580){
+					$("#menu a").removeClass("active");
+					$("#menu a").eq(3).addClass("active").siblings().removeClass("active");
+				}
+				if( $(window).scrollTop() > 6000){
+					$("#menu a").removeClass("active");
+					$("#menu a").eq(4).addClass("active").siblings().removeClass("active");
+				}
+			});
+			
 	}
 	
-	//((모바일이 아닌 화면))스크롤을 내릴때마다 작품이 하나씩 보임
-	if( $(window).width()> 600 ){
-		$(window).scroll(function(){
-			if( $(window).scrollTop()>1600 ){
-				$("#portfolio> section").eq(0).addClass("act");
-			}
-			if( $(window).scrollTop()>2500 ){
-				$("#portfolio> section").eq(1).addClass("act");
-			}
-			if( $(window).scrollTop()>3400 ){
-				$("#portfolio> section").eq(2).addClass("act");
-			}
-		});		
-	}
+	
+/*	if( $(window).width() > 600 ){
+			console.log($("#top").position().top);
+			console.log($("#about").position().top);
+			console.log($("#portfolio").position().top);
+			console.log($("#event").position().top);
+			console.log($("#contact").position().top);
+		$("nav").addClass("act");
+		
+	}*/
+	
 	
 });//끝
 
