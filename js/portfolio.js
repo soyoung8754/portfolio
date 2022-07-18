@@ -77,7 +77,7 @@
 				$("#menu a").removeClass("active");
 				$("#menu a").eq(3).addClass("active").siblings().removeClass("active");
 			}
-			if( $(window).scrollTop() > 10000 ){
+			if( $(window).scrollTop() > 9950 ){
 				$("#menu a").removeClass("active");
 				$("#menu a").eq(4).addClass("active").siblings().removeClass("active");
 			}
