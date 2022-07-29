@@ -375,7 +375,7 @@ h2 p {font-family: 'Noto Sans KR', sans-serif;}
 #contact.area {min-height:60vh;}
 #contact b 	{display:block; font-size:1.1rem; font-weight:400; padding-top:20pt;}
 #contact div {max-width:600px; margin:auto; display:flex; padding-top:30pt;}
-#contact section {flex:1; text-align:center;}
+#contact section {flex:1; text-align:center; padding-bottom:100px;}
 #contact i, #contact a.fas {font-size:5rem; color:#fff; padding-bottom:10pt;}
 #contact h2 {color:white;}
 #contact h3 {color:white;}
@@ -433,10 +433,9 @@ h2 p {font-family: 'Noto Sans KR', sans-serif;}
 	#portfolio a {padding:4pt 13pt;}
 	#portfolio a:first-of-type {margin-right:5pt;}
 	
-	#contact {/*border:1px solid red;*/}
+	#contact {}
 	#contact section {padding-bottom:100px;}
 	
-}
 
 @media (max-width:600px) {
 	
@@ -457,6 +456,7 @@ h2 p {font-family: 'Noto Sans KR', sans-serif;}
 		top:200px;
 		right:300px;
 	}
+}
 	
 @media (max-width:500px) {	
 	.area {padding-top:25vh;}
