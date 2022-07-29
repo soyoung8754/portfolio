@@ -271,7 +271,7 @@ h2 {
 글자 포커스 하기 끝***********************/
 
 /*내비게이션*/
-nav {position:fixed; width:100%; top:0;  padding:20pt 10pt 10pt 10pt; /*font-weight:bold;*/ z-index:1; transition:0.3s;}
+nav {position:fixed; width:100%; top:0;  padding:20pt 10pt 10pt 10pt; /*font-weight:bold;*/ z-index:5; transition:0.3s; }
 nav.act {background-color:#8373a2;}
 nav> div {max-width:1490px; margin:auto; display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;}
 nav img {width:50px; margin-left:50px;}
@@ -283,13 +283,13 @@ nav a.active {color:#a0d2c9;}
 #top {height:100vh; background:url("../images/sunset-26317751.jpg") no-repeat fixed center top / cover; width:100vw !important;}
 #typing {padding:40vh 1px 0 1px; color:white; text-align:center; line-height:160%; font-size:2rem; height:60vh; text-shadow:0 1px 10px black; font-family: 'Noto Serif KR', serif;}
 
-#scroll {max-width:100px; margin:auto; margin-top:30vh; text-align:center;}
-#top i {font-size:2.5rem; color:white; display:block; animation:down 1s infinite both;}
+#scroll { margin:auto; margin-top:85vh; text-align:center; position:absolute; z-index:4; text-align:center; width:100%;}
+#scroll i {font-size:2.5rem; color:white; display:block; animation:down 1s infinite both; margin:0 auto;}
 @keyframes down{
 	from 	{transform:translateY(-10pt); opacity:1;}
 	to 		{transform:translateY(0); opacity:0;}
 }
-#top a {color:white;}
+#scroll a {color:white;}
 
 
 h2 {text-align:center; font-size:4rem; margin-bottom:60pt; font-family: 'Kanit', sans-serif;}
