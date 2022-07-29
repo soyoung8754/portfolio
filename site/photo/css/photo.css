@@ -84,3 +84,21 @@ header + section> h2 {display:none;}
 
 /*    최하단 풋터     */
 footer {text-align:center; padding:20px; font-size:0.7rem;}
+
+/* 600px 사이즈 화면 */
+@media (max-width:600px) {
+	header img {width:50vh;}
+	nav ul li a {}
+}
+
+
+
+
+
+
+
+
+
+
+
+

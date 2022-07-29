@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*			전체설정				*/
+		* {
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
+		#layout {
+			width:1000px;
+			height:1412px;
+			margin:auto;
+		}
+
+/*			배경이미지			*/
+		body {
+			background-image : url('../images/background.png');
+			background-position: center;
+			background-repeat:no-repeat;
+		}
+		
+/*			헤더메뉴				*/
+		h1 {
+			text-align:center;
+			padding-top:5vh;
+			padding-bottom:5vh;
+			font-family: 'Nanum Myeongjo', serif;
+		}
+			h1 a {
+			text-decoration:none;
+			color:white;
+			font-size:1.7rem;
+		}
+			nav ul {
+			display:flex;
+			list-style:none;
+		}
+		nav li {
+			flex:1;
+			text-align:center;
+			padding:1.3vh;
+			font-weight:bold;
+			font-family: 'Nanum Myeongjo', serif;
+		}
+		nav li> a {
+			text-decoration:none;
+			color:white;
+			font-size:1.1rem;
+		}
+		nav hr {
+			width:920px;
+			margin:auto;
+			margin-top:1.5vh;
+			height:3px;
+			background:white;
+			opacity:0.5;
+			border:none;
+		}
+		
+/*			메뉴 호버				*/
+		nav ul li a:hover {
+			color:#ebefd6;
+		}

@@ -1,0 +1,102 @@
+@charset "utf-8";
+/*			전체설정				*/
+		* {
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
+		#layout {
+			width:1000px;
+			margin:auto;
+		}
+
+/*			배경이미지			*/
+		body {
+			background-position: center;
+			background-repeat:no-repeat;
+		}
+		
+/*			헤더메뉴				*/
+		header {
+			background-image : url('../images/background.png');
+		}
+		
+		h1 {
+			text-align:center;
+			padding-top:5vh;
+			padding-bottom:5vh;
+			font-family: 'Nanum Myeongjo', serif;
+		}
+		h1 a {
+			text-decoration:none;
+			color:white;
+			font-size:1.7rem;
+		}
+		nav ul {
+			display:flex;
+			list-style:none;
+		}
+		nav li {
+			flex:1;
+			text-align:center;
+			padding:1.3vh;
+			font-weight:bold;
+			font-family: 'Nanum Myeongjo', serif;
+		}
+		nav li> a {
+			text-decoration:none;
+			color:white;
+			font-size:1.1rem;
+		}
+		nav hr {
+			width:920px;
+			margin:auto;
+			margin-top:1.5vh;
+			height:3px;
+			background:white;
+			opacity:0.5;
+			border:none;
+		}
+		
+/*			메뉴 호버			*/
+		nav ul li a:hover {
+			color:#ebefd6;
+		}
+		
+/*			main			*/
+		main {
+						
+		}
+
+/*			h2설정			*/
+		h2 {
+			border:1px solid #bfbfbf;
+			margin:5vh 3vw;
+			padding:1vh 40px;
+			border-radius:15px;
+			box-shadow:2px 5px 5px rgba(0,0,0, 0.3);
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+
+/*			동영상 설정			*/
+		iframe {
+			width:900px;
+			height:600px;
+		}
+
+/*			줄거리			*/
+		#broad p	{
+			padding:0 3vw 10vh 3vw;
+			text-align:justify;
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+
+
+
+
+
+
+
+
+
+

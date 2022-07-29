@@ -1,0 +1,164 @@
+@charset "utf-8";
+/*			전체설정				*/
+		* {
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
+		#layout {
+			width:1000px;
+			margin:auto;
+			position:relative;
+		}
+
+/*			배경이미지			*/
+		body {
+			background-position: center;
+			background-repeat:no-repeat;
+		}
+		
+/*			헤더메뉴				*/
+		header {
+			background-image : url('../images/background.png');
+		}
+		
+		h1 {
+			text-align:center;
+			padding-top:5vh;
+			padding-bottom:5vh;
+			font-family: 'Nanum Myeongjo', serif;
+		}
+		h1 a {
+			text-decoration:none;
+			color:white;
+			font-size:1.7rem;
+		}
+		nav ul {
+			display:flex;
+			list-style:none;
+		}
+		nav li {
+			flex:1;
+			text-align:center;
+			padding:1.3vh;
+			font-weight:bold;
+			font-family: 'Nanum Myeongjo', serif;
+		}
+		nav li> a {
+			text-decoration:none;
+			color:white;
+			font-size:1.1rem;
+		}
+		nav hr {
+			width:920px;
+			margin:auto;
+			margin-top:1.5vh;
+			height:3px;
+			background:white;
+			opacity:0.5;
+			border:none;
+		}
+		
+/*			메뉴 호버			*/
+		nav ul li a:hover {
+			color:#ebefd6;
+		}
+		
+
+/*			h2설정			*/
+		h2 {
+			border:1px solid #bfbfbf;
+			margin:5vh 3vw;
+			padding:1vh 40px;
+			border-radius:15px;
+			box-shadow:2px 5px 5px rgba(0,0,0, 0.3);
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		
+/*			메인				*/
+		main {
+			width:920px;
+			margin:auto;
+		}
+		
+		#photo {
+			display:flex;
+			text-align:center;
+		}
+		
+		main img {
+			width:440px;
+		}
+		
+/*			호버			*/
+	figure {
+		position:relative;
+		margin-left:10px;
+		margin-bottom:10px;
+		height:248px;
+		
+	}
+	figcaption {
+		position:absolute;
+		background:rgba(0,0,0,0.5);
+		color:white;
+		width:100%;
+		height:100%;
+		top:0;
+		padding-top:27%;
+		text-align:center;
+		opacity:0;
+		transition:0.5s;
+		font-family: 'Nanum Gothic', sans-serif;
+		font-size:1.3rem;
+		
+	}
+	figure:hover figcaption {
+		opacity:1;
+	}
+		
+/*			더보기				*/		
+		
+		#more input{
+			width:920px;
+			height:40px;
+			margin-top:30px;
+			margin-bottom:100px;
+			text-align:center;
+			border:none;
+			border-radius:10px;
+			background:#e1e1e1;
+			font-family: 'Nanum Gothic', sans-serif;
+			font-weight:700;
+		}
+		#more input:hover{
+			background:#d1d1d1;
+		}
+		
+
+#popup {
+	position:fixed;
+	width:100%;
+	height:100vh;
+	top:0;
+	background:rgba(0,0,0,0.9);
+	display:none;
+}
+
+#popup div {
+	max-width:1000px; 
+	margin:auto;
+	margin-top:190px;
+}
+#popup img {
+	width:100%;
+}
+
+#popup button {
+	float:right;
+	padding:1vw;
+	font-size:2rem;
+	background:rgba(0,0,0,0.0);
+	color:white;
+	border:none;
+}

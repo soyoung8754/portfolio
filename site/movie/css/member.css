@@ -1,0 +1,218 @@
+@charset "utf-8";
+/*			전체설정				*/
+		* {
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
+		#layout {
+			width:1000px;
+			margin:auto;
+		}
+
+/*			배경이미지			*/
+		body {
+			background-position: center;
+			background-repeat:no-repeat;
+		}
+		
+/*			헤더메뉴				*/
+		header {
+			background-image : url('../images/background.png');
+		}
+		
+		h1 {
+			text-align:center;
+			padding-top:5vh;
+			padding-bottom:5vh;
+			font-family: 'Nanum Myeongjo', serif;
+		}
+		h1 a {
+			text-decoration:none;
+			color:white;
+			font-size:1.7rem;
+		}
+		nav ul {
+			display:flex;
+			list-style:none;
+		}
+		nav li {
+			flex:1;
+			text-align:center;
+			padding:1.3vh;
+			font-weight:bold;
+			font-family: 'Nanum Myeongjo', serif;
+		}
+		nav li> a {
+			text-decoration:none;
+			color:white;
+			font-size:1.1rem;
+		}
+		nav hr {
+			width:920px;
+			margin:auto;
+			margin-top:1.5vh;
+			height:3px;
+			background:white;
+			opacity:0.5;
+			border:none;
+		}
+		
+/*			메뉴 호버			*/
+		nav ul li a:hover {
+			color:#ebefd6;
+		}
+		
+/*			main			*/
+		main {
+			
+		}
+
+/*			h2설정			*/
+		h2 {
+			border:1px solid #bfbfbf;
+			margin:5vh 3vw;
+			padding:1vh 40px;
+			border-radius:15px;
+			box-shadow:2px 5px 5px rgba(0,0,0, 0.3);
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+
+/*************			감독/출현 이미지				************/
+		#member {
+			margin:0 3vw;
+		}
+		main img {
+			width:200px;
+		}
+		main h3 {
+			font-size:1.5rem;
+			padding-left:20px;
+			color:#626262;
+			margin-top:3vh;
+			margin-bottom:1vh;
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		
+		/*감독*/
+		#appearance {
+			display:flex;
+		}
+		/*주연*/
+		#a {
+			margin-left:260px;
+		}
+		#role {
+			display:flex;
+		}
+		#role figure {
+			margin-right:30px;
+		}
+		/*조연*/
+		#supporting1 {
+			display:flex;
+		}
+		#supporting1 figure {
+			margin-right:30px;
+		}
+		#supporting2 {
+			display:flex;
+		}
+		#supporting2 figure {
+			margin-right:30px;
+			margin-top:30px;
+		}
+		
+		
+		/*************			등장인물				************/
+		#member2 {
+			margin:0 3vw;
+		}
+		#character1 {
+			margin-bottom:30px;
+			display:flex;
+		}
+		#character1 figure {
+			margin-right:30px;
+		}
+		#character2 {
+			display:flex;
+		}
+		#character2 figure {
+			margin-right:30px;
+		}
+		#character3 {
+			display:flex;
+		}
+		#character3 figure {
+			margin-right:30px;
+			margin-top:30px;
+			margin-bottom:100px;
+		}
+		
+		
+		
+/*			등장인물			*/
+		
+		
+		
+		
+/*******************			호버효과			*********************/
+figure {
+	position:relative;
+}
+figcaption {
+	position:absolute;
+	background:rgba(0,0,0,0.5);
+	color:white;
+	width:100%;
+	height:100%;
+	top:0;
+	padding-top:45%;
+	text-align:center;
+	opacity:0;
+	transition:0.5s;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+figure:hover figcaption {
+	opacity:1;
+}
+
+/*
+#role figure {
+	position:relative;
+}
+#role figcaption {
+	position:absolute;
+	background:rgba(0,0,0,0.5);
+	color:white;
+	width:100%;
+	height:100%;
+	top:0;
+	padding-top:45%;
+	text-align:center;
+	opacity:0;
+	transition:0.5s;
+}
+#role figure:hover figcaption {
+	opacity:1;
+}
+/*
+#supporting1 figure {
+	position:relative;
+}
+#supporting1 figcaption {
+	position:absolute;
+	background:rgba(0,0,0,0.5);
+	color:white;
+	width:100%;
+	height:100%;
+	top:0;
+	padding-top:45%;
+	text-align:center;
+	opacity:0;
+	transition:0.5s;
+}
+#supporting1 figure:hover figcaption {
+	opacity:1;
+}*/

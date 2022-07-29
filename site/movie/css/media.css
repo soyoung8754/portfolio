@@ -1,0 +1,161 @@
+@charset "utf-8";
+/*			전체설정				*/
+		* {
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
+		#layout {
+			width:1000px;
+			margin:auto;
+			position:relative;
+		}
+		
+/*			배경이미지			*/
+		body {
+			background-position: center;
+			background-repeat:no-repeat;
+		}
+		
+/*			헤더메뉴				*/
+		header {
+			background-image : url('../images/background.png');
+		}
+		
+		h1 {
+			text-align:center;
+			padding-top:5vh;
+			padding-bottom:5vh;
+			font-family: 'Nanum Myeongjo', serif;
+		}
+		h1 a {
+			text-decoration:none;
+			color:white;
+			font-size:1.7rem;
+		}
+		nav ul {
+			display:flex;
+			list-style:none;
+		}
+		nav li {
+			flex:1;
+			text-align:center;
+			padding:1.3vh;
+			font-weight:bold;
+			font-family: 'Nanum Myeongjo', serif;
+		}
+		nav li> a {
+			text-decoration:none;
+			color:white;
+			font-size:1.1rem;
+		}
+		nav hr {
+			width:920px;
+			margin:auto;
+			margin-top:1.5vh;
+			height:3px;
+			background:white;
+			opacity:0.5;
+			border:none;
+		}
+		
+/*			메뉴 호버			*/
+		nav ul li a:hover {
+			color:#ebefd6;
+		}
+		
+/*			로고				*/
+		#logo	{
+			text-align:center;
+			margin-bottom:50px;
+		}
+		#logo img {
+			width:100px;
+			margin:50px;
+		}
+		#logo hr {
+			width:100px;
+			margin:auto;
+		}
+		
+/*			검색창			*/
+
+		#search {
+			height:40px;
+			width:300px;
+			border:1px solid #5c6e56;
+			background:white;
+			margin:auto;
+			border-radius:5px;
+			margin-bottom:50px;
+		}
+		input {
+			font-size:15px;
+			font-family: 'Nanum Gothic', sans-serif;
+			width:200px;
+			padding:10px;
+			border:0px;
+			outline:none;
+			float:left;
+			border-radius:5px;
+		}
+		button {
+			width:50px;
+			height:100%;
+			border:0px;
+			background:#5c6e56;
+			outline:none;
+			float:right;
+			color:white;
+		}
+
+/*			미디어			*/
+		#media {
+			border:1px solid #d1d1d1;
+			display:flex;
+			width: 920px;
+			margin:auto;
+			padding:10px;
+			margin-bottom:10px;
+		}
+		#media a{
+			text-decoration:none;
+		}
+		#media h2	{
+			margin:30px;
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		#media p {
+			text-align:justify;
+			color:black;
+			padding:0 50px 0 30px;
+			color:#969696;
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		#media p:last-child {
+			font-size:1rem;
+			color:#606060;
+		}
+		#media img {
+			width:400px;
+		}
+		
+/*			더보기				*/		
+		
+		#more input{
+			width:920px;
+			height:40px;
+			margin-top:30px;
+			margin-bottom:100px;
+			margin-left:41px;
+			text-align:center;
+			border:none;
+			border-radius:10px;
+			background:#e1e1e1;
+			font-family: 'Nanum Gothic', sans-serif;
+			font-weight:700;
+		}
+		#more input:hover{
+			background:#d1d1d1;
+		}
+		

@@ -1,0 +1,211 @@
+@charset "utf-8";
+/*			전체설정				*/
+		* {
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
+		#layout {
+			width:1000px;
+			margin:auto;
+		}
+
+/*			배경이미지			*/
+		body {
+			background-position: center;
+			background-repeat:no-repeat;
+		}
+		
+/*			헤더메뉴				*/
+		header {
+			background-image : url('../images/background.png');
+		}
+		
+		h1 {
+			text-align:center;
+			padding-top:5vh;
+			padding-bottom:5vh;
+			font-family: 'Nanum Myeongjo', serif;
+		}
+		h1 a {
+			text-decoration:none;
+			color:white;
+			font-size:1.7rem;
+		}
+		nav ul {
+			display:flex;
+			list-style:none;
+		}
+		nav li {
+			flex:1;
+			text-align:center;
+			padding:1.3vh;
+			font-weight:bold;
+			font-family: 'Nanum Myeongjo', serif;
+		}
+		nav li> a {
+			text-decoration:none;
+			color:white;
+			font-size:1.1rem;
+		}
+		nav hr {
+			width:920px;
+			margin:auto;
+			margin-top:1.5vh;
+			height:3px;
+			background:white;
+			opacity:0.5;
+			border:none;
+		}
+		
+/*			메뉴 호버			*/
+		nav ul li a:hover {
+			color:#ebefd6;
+		}
+		
+/*			main			*/
+		main {
+
+		}
+
+/*			h2설정			*/
+		h2 {
+			border:1px solid #bfbfbf;
+			margin:5vh 3vw;
+			padding:1vh 40px;
+			border-radius:15px;
+			box-shadow:2px 5px 5px rgba(0,0,0, 0.3);
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+
+/*			평점 이미지 크기 조절			*/
+		
+		#mark img{
+			width:900px;
+			margin-left:50px;
+		}
+
+/*			리뷰				*/
+		#mark2 {
+			text-align:center;
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		
+		#mark3 img {
+			margin-top:10px;
+			width:30px;
+			padding:none;
+		}
+
+		#user	{
+			width:900px;
+			margin:auto;
+		}
+		
+		#user h3 {
+			margin-bottom:2vh;
+			margin-left:3vw;
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		
+		#review {
+			border:1px solid #bfbfbf;
+			border-radius:10px;
+			padding:3vh 4vw;
+			margin-bottom:1vh;
+		}
+		
+		#review2 {
+			display:flex;
+			margin-bottom:2vh;
+		}
+		
+		#review2 img{
+			width:20px;
+		}
+		
+		#review2 p {
+			margin-left:30px;
+			color:#464646;
+			font-size:0.9rem;
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		
+		#review h4 {
+			margin-bottom:1vh;
+			font-size:0.9rem;
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		
+		#review3 {
+			display:flex;
+		}
+		
+		#review3 p {
+			margin-right:20px;
+			font-size:0.8rem;
+			color:#464646;
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		
+		#review3 hr {
+			margin-right:20px;
+		}
+		
+/*			버튼, 텍스트 입력란 크기 조절X			*/
+		#button {
+			text-align:center;
+			margin-top:5vh;
+			margin-bottom:5vh;
+			display:flex;
+			justify-content:space-around;
+			padding:0 219px;
+		}
+		
+		#button button{
+			font-size:1rem;
+			padding:3px 15px;
+			background:#5c6e56;
+			color:white;
+			border:none;
+			border-radius:5px;
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		
+		/*#button button:hover {
+			background:#404d3b;
+		}*/
+		
+    textarea {
+			width:500px;
+			height:40px;
+      resize:none;
+			border:1px solid #464646;
+			border-radius:5px;
+			padding-top:11px;
+			padding-left:20px;
+			color:#969696;
+			font-family: 'Nanum Gothic', sans-serif;
+    }
+		
+/*			더보기				*/		
+		
+		#more input{
+			width:920px;
+			height:40px;
+			margin-top:30px;
+			margin-bottom:100px;
+			margin-left:41px;
+			text-align:center;
+			border:none;
+			border-radius:10px;
+			background:#e1e1e1;
+			font-family: 'Nanum Gothic', sans-serif;
+			font-weight:700;
+		}
+		#more input:hover{
+			background:#d1d1d1;
+		}
+		
+
+
