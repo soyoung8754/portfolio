@@ -25,6 +25,7 @@
 			text-align:center;
 			padding-top:5vh;
 			padding-bottom:5vh;
+			text-shadow: 1px 1px 2px black;
 			font-family: 'Nanum Myeongjo', serif;
 		}
 		h1 a {
@@ -39,8 +40,9 @@
 		nav li {
 			flex:1;
 			text-align:center;
-			padding:1.3vh;
-			font-weight:bold;
+			padding:15px 10px 30px 10px;
+			text-shadow: 1px 1px 2px black;
+			font-weight: bold;
 			font-family: 'Nanum Myeongjo', serif;
 		}
 		nav li> a {
@@ -48,19 +50,30 @@
 			color:white;
 			font-size:1.1rem;
 		}
-		nav hr {
+		/*nav hr {
 			width:920px;
 			margin:auto;
 			margin-top:1.5vh;
 			height:3px;
-			background:white;
+			background:rgba(0,0,0,0);
 			opacity:0.5;
 			border:none;
-		}
+		}*/
 		
-/*			메뉴 호버			*/
-		nav ul li a:hover {
-			color:#ebefd6;
+/*			메뉴 선택과 호버			*/
+		.a1 {
+			border-top:5px solid rgba(255,255,255,0.5);
+			padding-top:5px;
+			
+		}
+
+		nav ul li a:hover:not(.a1) {
+			/*color:#5c6e56;*/
+			/*background-color:rgba(92,110,86,0.8);*/
+			/*background:rgba(255,255,255,0.2);*/
+			text-shadow: 1px 1px 2px black;
+			border-top:5px solid rgba(255,255,255,0.5);
+			padding-top:5px;
 		}
 		
 /*			main			*/
@@ -72,10 +85,11 @@
 		h2 {
 			border:1px solid #bfbfbf;
 			margin:5vh 3vw;
-			padding:1vh 40px;
+			padding:1.5vh 40px;
 			border-radius:15px;
 			box-shadow:2px 5px 5px rgba(0,0,0, 0.3);
 			font-family: 'Nanum Gothic', sans-serif;
+			font-size:1.2rem;
 		}
 
 /*			동영상 설정			*/
