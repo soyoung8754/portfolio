@@ -400,6 +400,7 @@ h2 p {font-family: 'Noto Sans KR', sans-serif;}
 	#top {background-size:auto 100vh;}
 	#typing {font-size:2rem;}	
 	/*#rogo img {border:1px solid red;}*/
+  .floresta {bottom:0;}
 	
 	nav {padding:10pt 5pt 5pt 5pt; }
 	nav> div {display:block; }
