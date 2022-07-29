@@ -109,10 +109,10 @@
 				if( $(window).scrollTop()>1600 ){
 					$("#portfolio> section").eq(0).addClass("act");
 				}
-				if( $(window).scrollTop()>2500 ){
+				if( $(window).scrollTop()>2300 ){
 					$("#portfolio> section").eq(1).addClass("act");
 				}
-				if( $(window).scrollTop()>3400 ){
+				if( $(window).scrollTop()>3000 ){
 					$("#portfolio> section").eq(2).addClass("act");
 				}
 				
