@@ -51,7 +51,7 @@
 			txt += typing[i];
 			document.getElementById("typing").innerText = txt;
 			i++;
-			setTimeout( type, 120 );
+			setTimeout( type, 100 );
 		}
 	}
 	type();
@@ -87,12 +87,13 @@
 		//화면 스크롤시 상단 배경색 생김
 		//((모바일이 아닌 화면))스크롤을 내릴때마다 작품이 하나씩 보임
 		//((모바일 아닌 화면))스크롤 시 메뉴 색변경되어 들어옴
+		//스킬 바 색상 들어옴
 			$(window).scroll(function(){
 				
 				if( $(window).scrollTop()>200 ){            
-        $(".w1").stop().animate({width:"90%"});
-        $(".w2").stop().delay(600).animate({width:"80%"});
-        $(".w3").stop().delay(1000).animate({width:"70%"});
+        $(".w1").stop().animate({width:"95%"});
+        $(".w2").stop().delay(600).animate({width:"90%"});
+        $(".w3").stop().delay(1000).animate({width:"80%"});
         $(".w4").stop().delay(1400).animate({width:"70%"});
         $(".w5").stop().delay(1800).animate({width:"60%"});
         }
