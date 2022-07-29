@@ -77,11 +77,12 @@
 				$("#menu a").removeClass("active");
 				$("#menu a").eq(3).addClass("active").siblings().removeClass("active");
 			}
-			if( $(window).scrollTop() > 9950 ){
+			if( $(window).scrollTop() > 10000 ){
 				$("#menu a").removeClass("active");
 				$("#menu a").eq(4).addClass("active").siblings().removeClass("active");
 			}
 		});	
+	
 	} else{	
 		//휴대폰 아닐때
 		//화면 스크롤시 상단 배경색 생김
@@ -170,7 +171,7 @@ function init(){
   }
 
   var estrela = "";
-  var qtdeEstrelas = 250;
+  var qtdeEstrelas = 500;
   var noite = document.querySelector(".constelacao");
   var widthWindow = window.innerWidth;
   var heightWindow = window.innerHeight;
