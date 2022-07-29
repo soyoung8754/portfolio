@@ -3,9 +3,12 @@
 /*공통*/
 *{margin:0; padding:0; box-sizing:border-box;}
 html,body {font:12pt/160% 'Noto Sans KR', sans-serif; letter-spacing: -0.75pt;}
-body {background:#f6eced;}
+body {background:#f6eced; }
 img {max-width:100%; display:block;}
 a {text-decoration:none;}
+
+#layout,#star {overflow:hidden !important; width:100vw !important;}
+#star {position:absolute; top:0; left:0; z-index:2; height:100vh;}
 
 /**************상단 배경에 별 박기*******************/
 .title {
@@ -38,6 +41,7 @@ a {text-decoration:none;}
 
 .constelacao {
   position: absolute;
+	z-index:3;
   left: 0;
   top: 0;
   width: 100%;
@@ -100,7 +104,8 @@ a {text-decoration:none;}
 .meteoro.style4 { animation-name: meteoroStyle4; }
 
 .lua {
-  position: absolute;
+  position:absolute;
+	z-index:2;
   right: 200px;
   top: 150px;
   width: 120px;
@@ -114,18 +119,20 @@ a {text-decoration:none;}
   animation-duration: 10s;
 }
 
-.lua .textura {
-  background-image: url(https://raw.githubusercontent.com/interaminense/starry-sky/master/src/img/bgMoon.png);
+ .textura {
+  background-image: url(../images/bgMoon.png);
+	z-index:3;
   background-position: center;
   background-size: 100%;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
+  width: 120px;
+  height: 120px;
+  position:absolute;
+  right:200px;
+  top: 150px;
   border-radius: 50%;
   overflow: hidden;
   opacity: 0.4;
+	
 }
 
 /*.floresta {
@@ -227,6 +234,38 @@ a {text-decoration:none;}
   }
 }
 /****************상단 배경에 별 박기 끝*******************/
+/********************글자 포커스 하기
+h2 {
+	-webkit-animation: h2 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: h2 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes h2 {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes h2 {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+글자 포커스 하기 끝***********************/
 
 /*내비게이션*/
 nav {position:fixed; width:100%; top:0;  padding:20pt 10pt 10pt 10pt; /*font-weight:bold;*/ z-index:1; transition:0.3s;}
@@ -234,12 +273,12 @@ nav.act {background-color:#8373a2;}
 nav> div {max-width:1490px; margin:auto; display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;}
 nav img {width:50px; margin-left:50px;}
 /*nav p {flex:1; font-size:2rem; color:white; font-family: 'Niconne', cursive;}*/
-nav a {padding-right:30px; color:white; text-shadow:0 0 10px black; font-family: 'Niconne', cursive; font-size:1.7rem;}
+nav a {padding-right:30px; color:white; text-shadow:0 0 10px black; font-family: 'Kanit', sans-serif; font-size:1.7rem;}
 nav a.active {color:#a0d2c9;}
 
 /*헤더*/
-#top {height:100vh; background:url("../images/sunset-26317752.jpg") no-repeat fixed center top / cover;}
-#typing {padding:40vh 1px 0 1px; color:white; text-align:center; line-height:160%; font-size:2.5rem; height:60vh; text-shadow:0 1px 10px black; font-family: 'Song Myung', serif;}
+#top {height:100vh; background:url("../images/sunset-26317752.jpg") no-repeat fixed center top / cover; width:100vw !important;}
+#typing {padding:40vh 1px 0 1px; color:white; text-align:center; line-height:160%; font-size:2rem; height:60vh; text-shadow:0 1px 10px black; font-family: 'Noto Serif KR', serif;}
 
 #scroll {max-width:100px; margin:auto; margin-top:30vh; text-align:center;}
 #top i {font-size:2.5rem; color:white; display:block; animation:down 1s infinite both;}
@@ -250,13 +289,14 @@ nav a.active {color:#a0d2c9;}
 #top a {color:white;}
 
 
-h2 {text-align:center; font-size:4rem; margin-bottom:60pt; font-family: 'Niconne', cursive;}
+h2 {text-align:center; font-size:4rem; margin-bottom:60pt; font-family: 'Kanit', sans-serif;}
+h2 p {font-family: 'Noto Sans KR', sans-serif;}
 .area {padding-top:11vh; min-height:100vh;}
 
 /*About*/
 #about {background:#f6eced;}
 #about img {width:250pt; margin:0pt auto; }
-#about> p {max-width:150pt; margin:auto; text-align:center;}
+#about> p {max-width:200pt; margin:auto; text-align:center;}
 #about  q {font-weight:bold; font-size:1.2rem; line-height:200%; background:#a0d2c9;}
 #about> div {max-width:900pt; margin:auto; display:flex;}
 #about  section {flex:1;}
@@ -264,7 +304,7 @@ h2 {text-align:center; font-size:4rem; margin-bottom:60pt; font-family: 'Niconne
 #about  section:nth-child(2) {flex:2;}
 #about  section:nth-child(3) {flex:0.8;}
 #about  section> p {font-weight:300; font-size:0.9rem;}
-#about h3 {margin:50pt 0 10pt 0;}
+#about h3 {margin:50pt 0 10pt 0; font-family: 'Kanit', sans-serif;}
 
 /*************퍼센트 조절***************/
 #skill> div {display:flex; align-items:center; }
@@ -335,8 +375,8 @@ h2 {text-align:center; font-size:4rem; margin-bottom:60pt; font-family: 'Niconne
 #contact i, #contact a.fas {font-size:5rem; color:#fff; padding-bottom:10pt;}
 #contact h2 {color:white;}
 #contact h3 {color:white;}
-#contact h3+a {color:white; font-family: 'Noto Sans KR', sans-serif;}
-#contact p {font-family: 'Noto Sans KR', sans-serif; color:white;}
+#contact h3+a {color:white;}
+#contact p {color:white;}
 
 
 /*팝업 큰이미지 보기*/
@@ -349,7 +389,7 @@ h2 {text-align:center; font-size:4rem; margin-bottom:60pt; font-family: 'Niconne
 	
 	#rogo img {padding:0; margin:auto; width:13vw; margin-bottom:10px;}
 	#menu {display:flex; justify-content:space-around;}
-	#menu a {text-align:center;}
+	#menu a {text-align:center; font-family: 'Kanit', sans-serif;}
 	#menu a:first-child {display:none;}
 	h2 {font-size:2.2rem;}
 	.area {/*padding-top:11vh;*/} 
@@ -393,18 +433,76 @@ h2 {text-align:center; font-size:4rem; margin-bottom:60pt; font-family: 'Niconne
 	
 }
 
-@media (max-width:537px) {
+@media (max-width:600px) {
 	
 	#rogo img {padding:0; margin:auto; width:13vw; margin-bottom:10px;}
 	#menu {display:flex; justify-content:space-around;}
-	#menu a {text-align:center;}
+	#menu a {text-align:center; font-family: 'Kanit', sans-serif;}
 	#menu a:first-child {display:none;}
+	#typing {font-size:1.6rem;}
+	.lua {
+		width:80px;
+		height:80px;
+		top:200px;
+		right:300px;
+	}
+	.textura {
+		width:80px;
+		height:80px;
+		top:200px;
+		right:300px;
+	}
+	
+@media (max-width:500px) {	
+	.area {padding-top:25vh;}
+	#menu {display:flex; justify-content:space-around;}
+	#menu a {padding:0; margin:0; text-align:center; font-family: 'Kanit', sans-serif;}
+	.lua {
+		width:70px;
+		height:70px;
+		top:200px;
+		right:260px;
+	}
+	.textura {
+		width:70px;
+		height:70px;
+		top:200px;
+		right:260px;
+	}
 }
+	
 /* 넓이 (0~375픽셀) */
 @media (max-width:375px) {	
 	.area {padding-top:25vh;}
 	#menu {display:flex; justify-content:space-around;}
-	#menu a {padding:0; margin:0; text-align:center;}
+	#menu a {padding:0; margin:0; text-align:center; font-family: 'Kanit', sans-serif;}
+	.lua {
+		width:60px;
+		height:60px;
+		right:250px;
+	}
+	.textura {
+		width:60px;
+		height:60px;
+		right:250px;
+	}
+}
+
+@media (max-width:280px) {	
+	.area {padding-top:25vh;}
+	#menu {display:flex; justify-content:space-around;}
+	#menu a {padding:0; margin:0; text-align:center; font-family: 'Kanit', sans-serif; font-size:1rem;}
+	#typing {font-size:1.3rem;}
+	.lua {
+		width:40px;
+		height:40px;
+		right:180px;
+	}
+	.textura {
+		width:40px;
+		height:40px;
+		right:180px;
+	}
 }
 
 
