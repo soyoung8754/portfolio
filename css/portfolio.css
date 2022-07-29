@@ -283,6 +283,7 @@ nav a.active {color:#a0d2c9;}
 #top {height:100vh; background:url("../images/sunset-26317751.jpg") no-repeat fixed center top / cover; width:100vw !important;}
 #typing {padding:40vh 1px 0 1px; color:white; text-align:center; line-height:160%; font-size:2rem; height:60vh; text-shadow:0 1px 10px black; font-family: 'Noto Serif KR', serif;}
 
+/*스크롤 아이콘*/
 #scroll { margin:auto; margin-top:85vh; text-align:center; position:absolute; z-index:4; text-align:center; width:100%;}
 #scroll i {font-size:2.5rem; color:white; display:block; animation:down 1s infinite both; margin:0 auto;}
 @keyframes down{
@@ -346,9 +347,9 @@ h2 p {font-family: 'Noto Sans KR', sans-serif;}
 #portfolio li {display:flex; align-items:center;}
 #portfolio b  {min-width:60pt;}
 #portfolio span {line-height:180%; text-align:justify;}
-#portfolio a   {padding:6pt 30pt; border-radius:20pt; border:1pt solid #ddd; color:black; font-size:1.rem; font-weight:500; transition:0.3s;}
+#portfolio a   {padding:6pt 30pt; border-radius:20pt; border:1pt solid #8373a2; color:#63587b; font-size:1.rem; font-weight:500; transition:0.3s;}
 #portfolio a:first-of-type {margin-right:10pt;}
-#portfolio a:hover {background:#555; color:white;}
+#portfolio a:hover {background:#8373a2; color:white;}
 /*#tae div {border:1px solid red;}*/
 #tae div:first-child {flex:1.3;}
 #tae div:last-child {flex:1;}
