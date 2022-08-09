@@ -64,7 +64,17 @@
 			console.log($("#contact").position().top);*/
 		$("nav").addClass("act");
 		
-			$(window).scroll(function(){				
+			$(window).scroll(function(){	
+
+			if( $(window).scrollTop()>1000 ){            
+        $(".w1").stop().animate({width:"95%"});
+        $(".w2").stop().delay(600).animate({width:"90%"});
+        $(".w3").stop().delay(1000).animate({width:"80%"});
+        $(".w4").stop().delay(1400).animate({width:"70%"});
+        $(".w5").stop().delay(1800).animate({width:"60%"});
+        }
+
+			
 			if( $(window).scrollTop() > 831 /*&&   $(window).scrollTop() < 1999*/){
 				$("#menu a").removeClass("active");
 				$("#menu a").eq(1).addClass("active").siblings().removeClass("active");
