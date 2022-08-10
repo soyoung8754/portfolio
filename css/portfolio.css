@@ -344,6 +344,15 @@ h2 p {font-family: 'Noto Sans KR', sans-serif;}
 #portfolio> section:nth-of-type(3).act> div:first-child {transform:scale(1); opacity:1;}
 #portfolio> section:nth-of-type(3).act> div:last-child	{transform:scale(1); opacity:1;}
 
+#portfolio> section:nth-of-type(4)> div:first-child {transform:translateX(-450pt);transition:3s;}
+#portfolio> section:nth-of-type(4)> div:last-child	{transform:translateX(600pt); transition:3s;}
+
+#portfolio> section:nth-of-type(4).act> div:first-child {transform:translateX(0);}
+#portfolio> section:nth-of-type(4).act> div:last-child	{transform:translateX(0);}
+
+#portfolio> section:nth-of-type(4)>div:first-child {flex:1.3;}
+#portfolio> section:nth-of-type(4)>div:last-child {flex:1;}
+
 #portfolio> section:not(#leeum) {min-height:100vh;padding-top:28vh;  }
 #portfolio  div {line-height:270%;}
 #portfolio h3 {font-size:2.3rem; padding-bottom:20pt;}
@@ -427,6 +436,8 @@ h2 p {font-family: 'Noto Sans KR', sans-serif;}
 	#portfolio> section:nth-of-type(2)> div:last-child	{transform:translateX(0);}
 	#portfolio> section:nth-of-type(3)> div:first-child {transform:scale(1); opacity:1;}
 	#portfolio> section:nth-of-type(3)> div:last-child	{transform:scale(1); opacity:1;}
+	#portfolio> section:nth-of-type(4)> div:first-child {transform:translateX(0);}
+	#portfolio> section:nth-of-type(4)> div:last-child	{transform:translateX(0);}
 	
 	#portfolio  h3   {font-size:1.8rem;}
 	#portfolio  img  {margin-bottom:30pt;}
