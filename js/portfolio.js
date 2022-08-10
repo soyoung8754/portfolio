@@ -51,7 +51,7 @@
 			txt += typing[i];
 			document.getElementById("typing").innerText = txt;
 			i++;
-			setTimeout( type, 50 );
+			setTimeout( type, 100 );
 		}
 	}
 	type();
