@@ -10,6 +10,11 @@ a {text-decoration:none;}
 #layout,#star {overflow:hidden !important; width:100vw !important;}
 #star {position:absolute; top:0; left:0; z-index:1; height:100vh;}
 
+/*퀵배너*/
+#quick {display:block; position:absolute;/*앱솔루트 중요*/ z-index:99;  top:50vh; right:5px;}
+#quick>img {width:100px;}
+#quick :hover {opacity:0.7;}
+
 
 /**************상단 배경에 별 박기*******************/
 /*.title {
@@ -375,7 +380,7 @@ h2 p {font-family: 'Noto Sans KR', sans-serif;}
 #contact.area {min-height:60vh;}
 #contact b 	{display:block; font-size:1.1rem; font-weight:400; padding-top:20pt;}
 #contact div {max-width:600px; margin:auto; display:flex; padding-top:30pt;}
-#contact section {flex:1; text-align:center; padding-bottom:100px;}
+#contact section {flex:1; text-align:center;}
 #contact i, #contact a.fas {font-size:5rem; color:#fff; padding-bottom:10pt;}
 #contact h2 {color:white;}
 #contact h3 {color:white;}
@@ -433,9 +438,10 @@ h2 p {font-family: 'Noto Sans KR', sans-serif;}
 	#portfolio a {padding:4pt 13pt;}
 	#portfolio a:first-of-type {margin-right:5pt;}
 	
-	#contact {}
+	#contact {/*border:1px solid red;*/}
 	#contact section {padding-bottom:100px;}
 	
+}
 
 @media (max-width:600px) {
 	
@@ -456,7 +462,8 @@ h2 p {font-family: 'Noto Sans KR', sans-serif;}
 		top:200px;
 		right:300px;
 	}
-}
+	#quick {display:block; position:absolute;/*앱솔루트 중요*/ z-index:99;  top:80vh; right:1px;}
+	#quick>img {width:100px;}
 	
 @media (max-width:500px) {	
 	.area {padding-top:25vh;}
