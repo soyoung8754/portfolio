@@ -135,6 +135,9 @@
 				if( $(window).scrollTop()>3000 ){
 					$("#portfolio> section").eq(2).addClass("act");
 				}
+				if( $(window).scrollTop()>3700 ){
+					$("#portfolio> section").eq(3).addClass("act");
+				}
 				
 				if( $(window).scrollTop() > 0){
 				$("#menu a").removeClass("active");
