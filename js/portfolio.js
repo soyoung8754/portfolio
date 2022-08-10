@@ -51,10 +51,20 @@
 			txt += typing[i];
 			document.getElementById("typing").innerText = txt;
 			i++;
-			setTimeout( type, 100 );
+			setTimeout( type, 50 );
 		}
 	}
 	type();
+	
+	const x= $("#quick").position().top; //"280px"	
+	
+	$(document).scroll(function(){	
+		//스크롤바를 움직였을때의 스크롤위치
+		const y = $(document).scrollTop();		
+		$("#quick").stop().animate({
+			top : ( x + y )
+		}, 300);
+	});
 	
 	//휴대폰에서는 상단 배경색 보임, 스크롤하면 해당메뉴 색 들어옴
 	if( $(window).width()<= 600 ){
